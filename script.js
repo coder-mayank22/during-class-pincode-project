@@ -59,7 +59,7 @@ function getPincodeData() {
         })
         .catch((error) => {
             resultDiv.innerHTML =
-                "Error fetching the data for this PIN Code. Try again later.";
+                "Error in the data for this PIN Code. Try again later.";
             console.log(error);
         });
 
