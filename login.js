@@ -31,8 +31,8 @@ submit.addEventListener("click", function(event) {
         .then((userCredential) => {
             const user = userCredential.user;
             alert("Logged In successfully!");
-            window.location.href = "index.html"; // Redirect to home page after successful login
-           
+            window.location.href = "index.html"; 
+
         })
         .catch((error) => {
             const errorCode = error.code;
