@@ -135,7 +135,7 @@ function getPincodeData() {
                 const postOffice = info.PostOffice;
                 // console.log(postOffice);
 
-                let output = `<h3>Results for PIN ${pin}</h3>`;
+                let output = `<h3>RESULTS FOR PIN ${pin} : </h3> <hr/>`;
 
                 postOffice.forEach((office) => {
                     output += `
@@ -150,7 +150,7 @@ function getPincodeData() {
                 container2.style.display = "flex";
             } else {
                 resultDiv.innerHTML = info.Message;
-                container2.style.display = "none";
+                container2.style.display = "flex";
             }
         })
         .catch((error) => {
@@ -161,5 +161,5 @@ function getPincodeData() {
 
     // console.log(prom);
 
-    //take the result and place it inside the ui
+    
 }
