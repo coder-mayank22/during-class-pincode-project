@@ -20,10 +20,11 @@ Some Glimpses of my project:
 
 
 3) The Main Page:
-4) 
+   
 ![Screenshot (362)](https://github.com/user-attachments/assets/f408da55-661c-421b-b0bc-a094ccb3729a)
 
 
 4)The Main Page with some results:
 
-![Screenshot (363)](https://github.com/user-attachments/assets/7b7c5f81-eac4-4074-87e2-3f0bda7c705d)
+![Screenshot (364)](https://github.com/user-attachments/assets/7e6cb2fb-e873-4c70-a4f8-b07c923a2d7c)
+
