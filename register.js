@@ -17,22 +17,20 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
-const auth = getAuth(app); // ✅ Add this line
+const auth = getAuth(app);
 
 // Submit button event
-const submit = document.getElementById("submit");
-submit.addEventListener("click", function(event) {
-    event.preventDefault();
-
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+const form = document.querySelector("form");
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const email = form.email.value;
+    const password = form.password.value;
 
     createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
             const user = userCredential.user;
             alert("Account created successfully!");
             window.location.href = "login.html";
-           
         })
         .catch((error) => {
             const errorCode = error.code;

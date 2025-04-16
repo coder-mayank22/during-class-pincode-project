@@ -20,12 +20,11 @@ const analytics = getAnalytics(app);
 const auth = getAuth(app); // ✅ Add this line
 
 // Submit button event
-const submit = document.getElementById("submit");
-submit.addEventListener("click", function(event) {
-    event.preventDefault();
-
-    const email = document.getElementById("email").value;
-    const password = document.getElementById("password").value;
+const form = document.querySelector("form");
+form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const email = form.email.value;
+    const password = form.password.value;
 
     signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
