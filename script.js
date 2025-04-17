@@ -56,36 +56,6 @@ header {
   margin: 0 auto 30px;
 }
 
-// .container2 {
-//   position: relative;
-//   padding: 20px;
-//   margin: 20px 0;
-//   text-align: left;
-//   color: #fff;
-//   background: rgba(0, 0, 0, 0.4);
-//   border: 2px solid rgba(255, 255, 255, 0.3);
-//   border-radius: 20px;
-//   width: 90%;
-//   max-width: 600px;
-//   max-height: 300px;
-//   overflow-y: auto;
-//   overflow-x: hidden;
-//   display: none;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: flex-start;
-//   -webkit-backdrop-filter: blur(15px);
-//   backdrop-filter: blur(15px);
-// }
-
-// .container2::-webkit-scrollbar {
-//   width: 8px;
-// }
-// .container2::-webkit-scrollbar-thumb {
-//   background-color: rgba(255, 255, 255, 0.3);
-//   border-radius: 10px;
-// }
-
 #pincode {
   padding: 5px 10px;
   width: 250px;
@@ -118,7 +88,7 @@ button:hover {
   font-size: 24px;
 }
 
-.card {
+.loc {
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -131,10 +101,9 @@ button:hover {
   color: white;
 }
 
-.card p {
+.loc p {
   margin: 6px 0;
   font-size: 16px;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .error {
@@ -204,7 +173,7 @@ function getPincodeData() {
 
         postOffices.forEach((office) => {
           output += `
-              <div class="card">
+              <div class="loc">
                 <p><strong>Post Office:</strong> ${office.Name}</p>
                 <p><strong>District:</strong> ${office.District}</p>
                 <p><strong>State:</strong> ${office.State}</p>
